@@ -64,6 +64,8 @@ These are the functionalities that I have added to the base project:
   If you ask to evaluate an invalid expression (e.g. 12+a12), it will respond: "Try asking something else!"
 - You can ask the time for certain cities (Madrid, Hong Kong, New York): ``time city_name``
 
+  Or you can ask for the time in your timezone with: ``time now``
+
   .. raw:: html
 
       <div align="center">
