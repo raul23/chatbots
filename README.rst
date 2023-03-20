@@ -47,7 +47,7 @@ These are the functionalities that I have added to the base project:
   - **Good morning!** (before 12pm)
   - **Good afternoon!** (between 12pm and 18)
   - **Good evening!** (after 18)
-- The chatbot will respond to a "goodbye" randomly. These are the possible answers:
+- The chatbot will respond randomly to a "goodbye". These are the possible answers:
 
   "Talk to you later!", "Have a nice day!", "Bye!", "See you later!", "Nice talking to you!"
 - Since the chatbot is based on the library `math.js <https://mathjs.org/>`_, it will be able to respond to all sorts
