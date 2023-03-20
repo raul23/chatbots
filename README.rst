@@ -52,8 +52,9 @@ These are the functionalities that I have added to the base project:
   
   `:warning:` 
   
-   The chatbot is not that picky when you enter your commands, i.e. you can enter them all in lowercase or some letters might be in uppercase
-   e.g. ``time MaDrid`` or ``Time Toronto`` both will work
+   - The chatbot is not that picky when you enter your commands, i.e. you can enter them all in lowercase or some letters might be in uppercase
+     e.g. ``time MaDrid`` or ``Time Toronto`` both will work
+   - If the entered city is not supported, it will just respond: "Wrong city!"
 
 With frameworks (TODO)
 ======================
