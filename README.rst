@@ -50,6 +50,8 @@ These are the functionalities that I have added to the base project:
          <img src="./images/javascript_calc.png" width="250" height="371">
        </a>
      </div>
+     
+  If you ask to evaluate an invalid expression (e.g. 12+a12), it will respond: "Try asking something else!"
 - You can ask the time for certain cities (Madrid, Hong Kong, New York): ``time city_name``
 
   .. raw:: html
