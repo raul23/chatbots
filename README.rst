@@ -35,7 +35,8 @@ JavaScript implementation (TODO)
 Test it live and source code ⭐
 """""""""""""""""""""""""""""""
 - `codepen.io <https://codepen.io/raul23/full/RwYYJYd>`_ (**Test it live** with fullscreen)
-- `codepen.io <https://codepen.io/raul23/pen/RwYYJYd>`_ (source code)
+- `github.com/raul23/chatbots <./code/javascript>` (source code @ GitHub)
+- `codepen.io <https://codepen.io/raul23/pen/RwYYJYd>`_ (source code @ codepen.io)
 
 Functionalities
 """""""""""""""
