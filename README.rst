@@ -40,6 +40,15 @@ These are the functionalities that I have added to the base project:
          <img src="./images/javascript_time.png" width="250" height="371">
        </a>
      </div>
+     
+   The full list of cities that are supported is:
+   
+   - Hong Kong
+   - Johannesburg
+   - London
+   - Madrid
+   - Toronto
+   - New York
 
 With frameworks (TODO)
 ======================
