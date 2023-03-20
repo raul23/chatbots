@@ -42,6 +42,11 @@ Functionalities
 """""""""""""""
 These are the functionalities that I have added to the base project:
 
+- The chatbot will greet you (when you tell it "hello") based on the hour of the day:
+
+  - Good morning! (before 12pm)
+  - Good afternoon! (between 12pm and 18)
+  - Good evening! (after 18)
 - Since the chatbot is based on the library `math.js <https://mathjs.org/>`_, it will be able to respond to all sorts
   of computation questions such as adding/multiplying, converting some units to other units, etc:
   
