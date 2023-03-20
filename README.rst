@@ -64,14 +64,14 @@ These are the functionalities that I have added to the base project:
        </a>
      </div>
      
-  The full list of cities that are supported is:
+  The full list of cities that are supported (along with their shortcuts) is:
 
-  - Hong Kong
-  - Johannesburg
-  - London
-  - Madrid
-  - Toronto
-  - New York
+  - Hong Kong: shorcuts are "h", "hk", "hkg", "hong", ""
+  - Johannesburg: shortcuts are "j", "jhb", "joburg", "johannes"
+  - London: shortcuts are "l", "ldn", "lon"  
+  - Madrid: shortcuts are "m", "mad"
+  - Toronto: shortcuts are "t", "tor"
+  - New York: shortcuts are "n", "ny"
   
   `:warning:` 
   
