@@ -141,24 +141,48 @@ function getBotResponse(input) {
     return answers[answerIdx];
   } else if (input.startsWith("time ")) {
     let arg = input.split(" ").slice(1).join(" ");
-    let timeZone;
+    let timeZone, city;
     switch (arg) {
+      case "h":
+      case "hk":
+      case "hkg":
+      case "hong":
       case "hong kong":
+        city = "Hong Kong";
         timeZone = "Asia/Hong_Kong";
         break;
+      case "j":
+      case "jhb":
+      case "joburg":
+      case "johannes":
       case "johannesburg":
+        city = "Johannesburg";
         timeZone = "Africa/Johannesburg";
         break;
+      case "l":
+      case "ldn":
+      case "lon":
       case "london":
+        city = "London";
         timeZone = "Europe/London";
         break;
+      case "m":
+      case "mad":
       case "madrid":
+        city = "Madrid";
         timeZone = "Europe/Madrid";
         break;
+      case "t":
+      case "to":
+      case "tor":
       case "toronto":
+        city = "Toronto";
         timeZone = "America/Toronto";
         break;
+      case "n":
+      case "ny":
       case "new york":
+        city = "New York";
         timeZone = "America/New_York";
         break;
       default:
@@ -168,7 +192,7 @@ function getBotResponse(input) {
                                                  {timeZone:timeZone,
                                                   timestyle:"full",
                                                   hourCycle:"h24"})
-    return cityTime;
+    return cityTime + " @ " + city;
   } else {
     let eval;
     try {
