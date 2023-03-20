@@ -60,7 +60,7 @@ These are the functionalities that I have added to the base project:
 
       <div align="center">
        <a href="https://codepen.io/raul23/full/RwYYJYd" target="_blank">
-         <img src="./images/javascript_time.png" width="250" height="371">
+         <img src="./images/javascript_time2.png" width="250" height="371">
        </a>
      </div>
      
