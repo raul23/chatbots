@@ -116,97 +116,116 @@ $("#textInput").keypress(function (e) {
 });
 
 function getBotResponse(input) {
-  input = input.toLowerCase().replace("?", "");
-  console.log(input);
-  // Simple responses
-  if (input == "hello") {
-    let answers;
-    let today = new Date();
-    hours = today.getHours();
-    if (hours < 12) {
-      answer = "Good morning!";
-    } else if (12 < hours < 18) {
-      answer = "Good afternoon!";
-    } else {
-      answer = "Good evening!"
-    }
-    //let answers = ["Hello there!", "Hi!"];
-    //return answers[getRandomInt(0, answers.length)];
-    return answer;
-  } else if (input == "goodbye") {
-    let answers = ["Talk to you later!", "Have a nice day!", "Bye!", 
-                   "See you later!", "Nice talking to you!"];
-    let answerIdx = getRandomInt(0, answers.length);
-    console.log(answerIdx);
-    return answers[answerIdx];
+  input = cleanInput(input);
+  //console.log(input);
+  if (input == "hello" || input == "hi") {
+    return hello(input);
+  } else if (input == "goodbye" || input == "bye") {
+    return goodbye(input);
   } else if (input.startsWith("time ")) {
-    let arg = input.split(" ").slice(1).join(" ");
-    let timeZone, city;
-    switch (arg) {
-      case "h":
-      case "hk":
-      case "hkg":
-      case "hong":
-      case "hong kong":
-        city = "Hong Kong";
-        timeZone = "Asia/Hong_Kong";
-        break;
-      case "j":
-      case "jhb":
-      case "joburg":
-      case "johannes":
-      case "johannesburg":
-        city = "Johannesburg";
-        timeZone = "Africa/Johannesburg";
-        break;
-      case "l":
-      case "ldn":
-      case "lon":
-      case "london":
-        city = "London";
-        timeZone = "Europe/London";
-        break;
-      case "m":
-      case "mad":
-      case "madrid":
-        city = "Madrid";
-        timeZone = "Europe/Madrid";
-        break;
-      case "t":
-      case "to":
-      case "tor":
-      case "toronto":
-        city = "Toronto";
-        timeZone = "America/Toronto";
-        break;
-      case "n":
-      case "ny":
-      case "new york":
-        city = "New York";
-        timeZone = "America/New_York";
-        break;
-      default:
-        return "Wrong city!"
-    }
-    let cityTime = new Date().toLocaleTimeString("en-US", 
-                                                 {timeZone:timeZone,
-                                                  timestyle:"full",
-                                                  hourCycle:"h24"})
-    return cityTime + " @ " + city;
+    return getTimeFromCity(input);
   } else {
-    let eval;
-    try {
-      eval = math.evaluate(input);
-    }
-    catch(err) {
-      return "Try asking something else!";
-    }
-    return eval;
+    return evalExpr(input);
   }
+}
+
+function cleanInput(input) {
+  return input.toLowerCase().replace("?", "");
+}
+
+function hello(input) {
+  let answers;
+  let today = new Date();
+  hours = today.getHours();
+  if (hours < 12) {
+    answer = "Good morning!";
+  } else if (12 < hours < 18) {
+    answer = "Good afternoon!";
+  } else {
+    answer = "Good evening!"
+  }
+  //let answers = ["Hello there!", "Hi!"];
+  //return answers[getRandomInt(0, answers.length)];
+  return answer;
+}
+
+function goodbye(input) {
+  let answers = ["Talk to you later!", "Have a nice day!", "Bye!", 
+                   "See you later!", "Nice talking to you!"];
+  let answerIdx = getRandomInt(0, answers.length);
+  console.log(answerIdx);
+  return answers[answerIdx];
+}
+
+function evalExpr(input) {
+  let eval;
+  try {
+    eval = math.evaluate(input);
+  }
+  catch(err) {
+    return "Try asking something else!";
+  }
+  return eval;
 }
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+}
+
+function getTimeFromCity(input) {
+  let arg = input.split(" ").slice(1).join(" ");
+  let timeZone, city;
+  switch (arg) {
+    case "h":
+    case "hk":
+    case "hkg":
+    case "hong":
+    case "hong kong":
+      city = "Hong Kong";
+      timeZone = "Asia/Hong_Kong";
+      break;
+    case "j":
+    case "jhb":
+    case "joburg":
+    case "johannes":
+    case "johannesburg":
+      city = "Johannesburg";
+      timeZone = "Africa/Johannesburg";
+      break;
+    case "l":
+    case "ldn":
+    case "lon":
+    case "london":
+      city = "London";
+      timeZone = "Europe/London";
+      break;
+    case "m":
+    case "mad":
+    case "madrid":
+      city = "Madrid";
+      timeZone = "Europe/Madrid";
+      break;
+    case "t":
+    case "to":
+    case "tor":
+    case "toronto":
+      city = "Toronto";
+      timeZone = "America/Toronto";
+      break;
+    case "n":
+    case "ny":
+    case "new york":
+      city = "New York";
+      timeZone = "America/New_York";
+      break;
+    default:
+      return "Wrong city!"
+  }
+  let cityTime = new Date().toLocaleTimeString("en-US", 
+                                               {timeZone:timeZone,
+                                                timestyle:"full",
+                                                hourCycle:"h24"})
+  return cityTime + " @ " + city;
 }
