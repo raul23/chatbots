@@ -29,7 +29,7 @@ JavaScript implementation (TODO)
    - ``hello`` -> ``Hello there!``
    - ``goodbye`` -> ``Talk to you later!``
  - By default, the original project makes the chatbot wait for 1 second before responding to the user's query
- - This is a very simple chatbot, i.e. you won't be able to have long and meaningful conversation with it (like you would with ChatGPT) but
+ - This is a very simple chatbot, i.e. you won't be able to have long and meaningful conversations with it (like you would with ChatGPT) but
    the idea is to make it a useful assistant with helpful features.
  - This chatbot project is a **work in progress** since I will be adding features as I go
 
