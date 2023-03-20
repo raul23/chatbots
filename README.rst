@@ -15,7 +15,7 @@ JavaScript implementation (TODO)
 .. raw:: html
 
    <div align="center">
-    <a href="https://codepen.io/raul23/full/Exeebrz" target="_blank">
+    <a href="https://codepen.io/raul23/full/RwYYJYd" target="_blank">
       <img src="./images/javascript_chatbot.png">
     </a>
     <p align="center">The user interface is collapsible</p>
@@ -28,6 +28,18 @@ JavaScript implementation (TODO)
  
  - ``hello`` -> ``Hello there!``
  - ``goodbye`` -> ``Talk to you later!``
+
+These are the functionalities that I have added to the base project:
+
+- You can ask the time for certain cities (Madrid, Honk Kong, New York): ``time city_name``
+
+  .. raw:: html
+
+      <div align="center">
+       <a href="https://codepen.io/raul23/full/RwYYJYd" target="_blank">
+         <img src="./images/javascript_time.png" width="250" height="371">
+       </a>
+     </div>
 
 With frameworks (TODO)
 ======================
