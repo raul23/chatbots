@@ -24,7 +24,7 @@ JavaScript implementation (TODO)
 `:information_source:` 
 
  - I based the user interface on indently's `Messenger Chat Bot <https://github.com/indently/mscbot>`_.
- Their project already comes with some simple bot responses to simple queries such as:
+   Their project already comes with some simple bot responses to simple queries such as:
  
    - ``hello`` -> ``Hello there!``
    - ``goodbye`` -> ``Talk to you later!``
