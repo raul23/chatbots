@@ -18,7 +18,7 @@ JavaScript implementation (TODO)
     <a href="https://codepen.io/raul23/full/Exeebrz" target="_blank">
       <img src="./images/javascript_chatbot.png">
     </a>
-    <p align="center">The user interface is also collapsible</p>
+    <p align="center">The user interface is collapsible</p>
   </div>
   
 `:information_source:` 
