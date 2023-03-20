@@ -31,7 +31,7 @@ JavaScript implementation (TODO)
 
 These are the functionalities that I have added to the base project:
 
-- You can ask the time for certain cities (Madrid, Honk Kong, New York): ``time city_name``
+- You can ask the time for certain cities (Madrid, Hong Kong, New York): ``time city_name``
 
   .. raw:: html
 
