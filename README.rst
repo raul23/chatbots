@@ -31,6 +31,11 @@ JavaScript implementation (TODO)
  - This is a very simple chatbot, i.e. you won't be able to have long and meaningful conversation with it (like you would with ChatGPT) but
    the idea is to make it a useful assistant with helpful features.
 
+Source code and test it live (TODO)
+"""""""""""""""""""""""""""""""""""
+
+Functionalities
+"""""""""""""""
 These are the functionalities that I have added to the base project:
 
 - You can ask the time for certain cities (Madrid, Hong Kong, New York): ``time city_name``
