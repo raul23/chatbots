@@ -31,8 +31,10 @@ JavaScript implementation (TODO)
  - This is a very simple chatbot, i.e. you won't be able to have long and meaningful conversation with it (like you would with ChatGPT) but
    the idea is to make it a useful assistant with helpful features.
 
-Source code and test it live (TODO)
-"""""""""""""""""""""""""""""""""""
+Test it live and source code ⭐
+"""""""""""""""""""""""""""""""
+- `codepen.io <https://codepen.io/raul23/full/RwYYJYd>`_ (**Test it live** with fullscreen)
+- `codepen.io <https://codepen.io/raul23/pen/RwYYJYd>`_ (source code)
 
 Functionalities
 """""""""""""""
