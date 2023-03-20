@@ -67,7 +67,7 @@ These are the functionalities that I have added to the base project:
   The full list of cities that are supported (along with their shortcuts) is:
 
   - **Hong Kong:** shorcuts are *h*, *hk*, *hkg*, *hong*
-  - **Johannesburg:** shortcuts are *j*, *jhb, *joburg*, *johannes*
+  - **Johannesburg:** shortcuts are *j*, *jhb*, *joburg*, *johannes*
   - **London:** shortcuts are *l*, *ldn*, *lon*
   - **Madrid:** shortcuts are *m*, *mad*
   - **Toronto:** shortcuts are *t*, *tor*
