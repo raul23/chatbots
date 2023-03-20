@@ -12,6 +12,15 @@ Without frameworks
 ==================
 JavaScript implementation
 -------------------------
+.. raw:: html
+
+   <div align="center">
+    <a href="https://codepen.io/raul23/full/Exeebrz" target="_blank">
+      <img src="./images/javascript_chatbot.png">
+    </a>
+    <p align="center">The user interface is also collapsible</p>
+  </div>
+  
 `:information_source:` 
 
  I based the user interface on indently's `Messenger Chat Bot <https://github.com/indently/mscbot>`_.
