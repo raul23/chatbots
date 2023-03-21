@@ -34,7 +34,7 @@ JavaScript implementation (+Eliza)
  - This chatbot project is a **work in progress** since I will be adding features as I go
  - The chatbot can also act as a "psychotherapist" (like `Eliza <https://en.wikipedia.org/wiki/ELIZA>`_). I ported a Python
    implementation of Eliza by `Joe Strout, Jeff Epler, Jez Higgins
-   <https://github.com/jeffshrager/elizagen.org/blob/master/Other_Elizas/20120311StroutEplerHigginsEliza.py>`_ (2005) to JavaScript.
+   <https://github.com/jeffshrager/elizagen.org/blob/master/Other_Elizas/20120311StroutEplerHigginsEliza.py>`_ (2005).
    
 
 Test it live and source code ⭐
@@ -107,7 +107,7 @@ These are the functionalities that I have added to the base project so far:
   patient)" <https://en.wikipedia.org/wiki/ELIZA>`_
   
   I ported the Python implementation of Eliza by `Joe Strout, Jeff Epler, Jez Higgins
-  <https://github.com/jeffshrager/elizagen.org/blob/master/Other_Elizas/20120311StroutEplerHigginsEliza.py>`_ (2005) to JavaScript
+  <https://github.com/jeffshrager/elizagen.org/blob/master/Other_Elizas/20120311StroutEplerHigginsEliza.py>`_ (2005)
   
   `:information_source:`
   
