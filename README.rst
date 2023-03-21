@@ -66,6 +66,14 @@ These are the functionalities that I have added to the base project so far:
      </div>
      
   If you ask to evaluate an invalid expression (e.g. 12+a12), Eliza will intervene and try to psychoanalyze you for asking such silly questions.
+  
+  .. raw:: html
+
+      <div align="center">
+       <a href="https://codepen.io/raul23/full/RwYYJYd" target="_blank">
+         <img src="./images/javascript_eliza_silly.png">
+       </a>
+     </div>
 - You can ask the date with the ``date`` command or the more "human" commands: what date, what's the date
 
   .. raw:: html
