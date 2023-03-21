@@ -65,7 +65,7 @@ These are the functionalities that I have added to the base project so far:
        </a>
      </div>
      
-  If you ask to evaluate an invalid expression (e.g. 12+a12), it will respond: "Try asking something else!"
+  If you ask to evaluate an invalid expression (e.g. 12+a12), Eliza will intervene and try to psychoanalyze you for asking such silly questions.
 - You can ask the date with the ``date`` command or the more "human" commands: what date, what's the date
 
   .. raw:: html
