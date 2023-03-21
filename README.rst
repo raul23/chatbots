@@ -40,7 +40,7 @@ Test it live and source code ⭐
 
 Functionalities
 """""""""""""""
-These are the functionalities that I have added to the base project:
+These are the functionalities that I have added to the base project so far:
 
 - The chatbot will greet you (when you first tell it "hello") based on the hour of the day:
 
