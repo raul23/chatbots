@@ -36,7 +36,10 @@ JavaScript implementation (+ELIZA)
  - The chatbot can also act as a "psychotherapist" (like `ELIZA <https://en.wikipedia.org/wiki/ELIZA>`_). I ported a Python
    implementation of ELIZA by `Joe Strout, Jeff Epler, Jez Higgins
    <https://github.com/jeffshrager/elizagen.org/blob/master/Other_Elizas/20120311StroutEplerHigginsEliza.py>`_ (2005).
-   
+
+`:warning:` 
+
+ Don't take this "therapist" seriously. It is just a program that tries to mimic a real therapist.
 
 Test it live and source code ⭐
 """""""""""""""""""""""""""""""
