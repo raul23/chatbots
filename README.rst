@@ -18,7 +18,7 @@ JavaScript implementation (+ELIZA)
     <a href="https://codepen.io/raul23/full/RwYYJYd" target="_blank">
       <img src="./images/javascript_chatbot.png">
     </a>
-    <p align="center">The user interface is collapsible</p>
+    <p align="center">The chatbot having a short "conversation"</p>
   </div>
   
 `:information_source:` 
@@ -29,6 +29,7 @@ JavaScript implementation (+ELIZA)
    - ``hello`` -> ``Hello there!``
    - ``goodbye`` -> ``Talk to you later!``
  - By default, the original project makes the chatbot wait for 1 second before responding to the user's query
+ - The user interface is collapsible
  - This is a very simple chatbot, i.e. you won't be able to have long and meaningful conversations with it (like you would with ChatGPT) but
    the idea is to make it a useful assistant with helpful features.
  - This chatbot project is a **work in progress** since I will be adding features as I go
