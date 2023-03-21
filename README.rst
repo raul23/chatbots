@@ -102,6 +102,18 @@ These are the functionalities that I have added to the base project so far:
 - The chatbot can also act as a `"psychotherapist of the Rogerian school (in which the therapist often reflects back the patient's words to the 
   patient)" <https://en.wikipedia.org/wiki/ELIZA>`_
   
+  I ported the Python implementation of Eliza by `Joe Strout, Jeff Epler, Jez Higgins
+  <https://github.com/jeffshrager/elizagen.org/blob/master/Other_Elizas/20120311StroutEplerHigginsEliza.py>`_ (2005) to JavaScript
+  
+  `:information_source:`
+  
+    eliza.py
+   
+    - a cheezy little Eliza knock-off by Joe Strout <joe@strout.net>
+    - with some updates by Jeff Epler <jepler@inetnebr.com>
+    - hacked into a module and updated by Jez Higgins <jez@jezuk.co.uk>
+    - last revised: 28 February 2005
+  
   .. raw:: html
 
       <div align="center">
