@@ -117,12 +117,16 @@ $("#textInput").keypress(function (e) {
 
 function getBotResponse(input) {
   input = cleanInput(input);
-  //console.log(input);
+  console.log(input);
   if (input == "hello" || input == "hi") {
     return hello(input);
   } else if (input == "goodbye" || input == "bye") {
     return goodbye(input);
-  } else if (input.startsWith("time ")) {
+  } else if (input == "date" || input.startsWith("what date") ||
+             input.startsWith("what is the date") || input.startsWith("what's the date")) {
+    return new Date().toDateString();
+  } else if (input.startsWith("time") || input.startsWith("what time") || 
+             input.startsWith("what is the time") || input.startsWith("what's the time")) {
     return getTimeFromCity(input);
   } else {
     return evalExpr(input);
@@ -130,7 +134,11 @@ function getBotResponse(input) {
 }
 
 function cleanInput(input) {
-  return input.toLowerCase().replace("?", "");
+  // - Change all characters in lowercase
+  // - Remove '?'
+  // - Replace multiple spaces with one space
+  // - Remove trailing space
+  return input.toLowerCase().replace("?", "").replace(/  +/g, ' ').trim();
 }
 
 function hello(input) {
@@ -151,7 +159,7 @@ function hello(input) {
 
 function goodbye(input) {
   let answers = ["Talk to you later!", "Have a nice day!", "Bye!", 
-                   "See you later!", "Nice talking to you!"];
+                 "See you later!", "Nice talking to you!"];
   let answerIdx = getRandomInt(0, answers.length);
   console.log(answerIdx);
   return answers[answerIdx];
@@ -168,6 +176,7 @@ function evalExpr(input) {
   return eval;
 }
 
+// From mozilla MDN
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -175,7 +184,13 @@ function getRandomInt(min, max) {
 }
 
 function getTimeFromCity(input) {
-  let arg = input.split(" ").slice(1).join(" ");
+  let arg;
+  if (input.startsWith("what time") || input.startsWith("what is the time") ||
+      input.startsWith("what's the time")) {
+    arg = ""
+  } else {
+    arg = input.split(" ").slice(1).join(" ");
+  }
   let timeZone, city;
   switch (arg) {
     case "h":
@@ -220,6 +235,9 @@ function getTimeFromCity(input) {
       city = "New York";
       timeZone = "America/New_York";
       break;
+    case "": // no argument, juste `time`
+    case "now":
+      return getTime();
     default:
       return "Wrong city!"
   }
