@@ -99,6 +99,8 @@ These are the functionalities that I have added to the base project so far:
    - The chatbot is not that picky when you enter your commands, i.e. you can enter them all in lowercase or some letters might be in uppercase
      e.g. ``time MaDrid`` or ``Time Toronto`` both will work
    - If the entered city is not supported, it will just respond: "Wrong city!"
+- The chatbot can also act as a `"psychotherapist of the Rogerian school (in which the therapist often reflects back the patient's words to the 
+  patient)" <https://en.wikipedia.org/wiki/ELIZA>`_ (TODO)
 
 With frameworks (TODO)
 ======================
