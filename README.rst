@@ -10,7 +10,7 @@ Exploring and implementing chatbots
 
 Without frameworks
 ==================
-JavaScript implementation (+Eliza)
+JavaScript implementation (+ELIZA)
 ----------------------------------
 .. raw:: html
 
@@ -32,8 +32,8 @@ JavaScript implementation (+Eliza)
  - This is a very simple chatbot, i.e. you won't be able to have long and meaningful conversations with it (like you would with ChatGPT) but
    the idea is to make it a useful assistant with helpful features.
  - This chatbot project is a **work in progress** since I will be adding features as I go
- - The chatbot can also act as a "psychotherapist" (like `Eliza <https://en.wikipedia.org/wiki/ELIZA>`_). I ported a Python
-   implementation of Eliza by `Joe Strout, Jeff Epler, Jez Higgins
+ - The chatbot can also act as a "psychotherapist" (like `ELIZA <https://en.wikipedia.org/wiki/ELIZA>`_). I ported a Python
+   implementation of ELIZA by `Joe Strout, Jeff Epler, Jez Higgins
    <https://github.com/jeffshrager/elizagen.org/blob/master/Other_Elizas/20120311StroutEplerHigginsEliza.py>`_ (2005).
    
 
@@ -65,7 +65,7 @@ These are the functionalities that I have added to the base project so far:
        </a>
      </div>
      
-  If you ask to evaluate an invalid expression (e.g. 12+a12), Eliza will intervene and try to psychoanalyze you for asking such silly questions.
+  If you ask to evaluate an invalid expression (e.g. 12+a12), ELIZA will intervene and try to psychoanalyze you for asking such silly questions.
   
   .. raw:: html
 
@@ -114,7 +114,7 @@ These are the functionalities that I have added to the base project so far:
 - The chatbot can also act as a `"psychotherapist of the Rogerian school (in which the therapist often reflects back the patient's words to the 
   patient)" <https://en.wikipedia.org/wiki/ELIZA>`_
   
-  I ported the Python implementation of Eliza by `Joe Strout, Jeff Epler, Jez Higgins
+  I ported the Python implementation of ELIZA by `Joe Strout, Jeff Epler, Jez Higgins
   <https://github.com/jeffshrager/elizagen.org/blob/master/Other_Elizas/20120311StroutEplerHigginsEliza.py>`_ (2005)
   
   `:information_source:`
