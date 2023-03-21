@@ -100,7 +100,15 @@ These are the functionalities that I have added to the base project so far:
      e.g. ``time MaDrid`` or ``Time Toronto`` both will work
    - If the entered city is not supported, it will just respond: "Wrong city!"
 - The chatbot can also act as a `"psychotherapist of the Rogerian school (in which the therapist often reflects back the patient's words to the 
-  patient)" <https://en.wikipedia.org/wiki/ELIZA>`_ (TODO)
+  patient)" <https://en.wikipedia.org/wiki/ELIZA>`_
+  
+  .. raw:: html
+
+      <div align="center">
+       <a href="https://codepen.io/raul23/full/RwYYJYd" target="_blank">
+         <img src="./images/javascript_eliza.png" width="284" height="371">
+       </a>
+     </div>
 
 With frameworks (TODO)
 ======================
