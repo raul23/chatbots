@@ -57,7 +57,7 @@ These are the functionalities that I have added to the base project:
 
       <div align="center">
        <a href="https://codepen.io/raul23/full/RwYYJYd" target="_blank">
-         <img src="./images/javascript_calc.png" width="332" height="371">
+         <img src="./images/javascript_calc.png" width="250" height="371">
        </a>
      </div>
      
@@ -68,7 +68,7 @@ These are the functionalities that I have added to the base project:
 
       <div align="center">
        <a href="https://codepen.io/raul23/full/RwYYJYd" target="_blank">
-         <img src="./images/javascript_date.png" width="250" height="371">
+         <img src="./images/javascript_date.png" width="332" height="371">
        </a>
       </div>
 - You can ask the time for certain cities (Madrid, Hong Kong, New York): ``time city_name``
