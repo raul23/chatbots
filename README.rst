@@ -91,8 +91,8 @@ These are the functionalities that I have added to the base project so far:
   - **Johannesburg:** shortcuts are *j*, *jhb*, *joburg*, *johannes*
   - **London:** shortcuts are *l*, *ldn*, *lon*
   - **Madrid:** shortcuts are *m*, *mad*
-  - **Toronto:** shortcuts are *t*, *tor*
   - **New York:** shortcuts are *n*, *ny*
+  - **Toronto:** shortcuts are *t*, *tor*
   
   `:warning:` 
   
