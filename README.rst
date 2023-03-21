@@ -138,7 +138,7 @@ These are the functionalities that I have added to the base project so far:
 
       <div align="center">
        <a href="https://codepen.io/raul23/full/RwYYJYd" target="_blank">
-         <img src="./images/javascript_eliza_charge.png">
+         <img src="./images/javascript_eliza_charge.png" width="284">
        </a>
        <p align="center">The chatbot is not working for free!</p>
      </div>
