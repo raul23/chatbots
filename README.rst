@@ -32,6 +32,10 @@ JavaScript implementation (TODO)
  - This is a very simple chatbot, i.e. you won't be able to have long and meaningful conversations with it (like you would with ChatGPT) but
    the idea is to make it a useful assistant with helpful features.
  - This chatbot project is a **work in progress** since I will be adding features as I go
+ - The chatbot can also act as a "psychotherapist" (like `Eliza <https://en.wikipedia.org/wiki/ELIZA>`_). I ported a Python
+   implementation of Eliza by `Joe Strout, Jeff Epler, Jez Higgins
+   <https://github.com/jeffshrager/elizagen.org/blob/master/Other_Elizas/20120311StroutEplerHigginsEliza.py>`_ (2005) to JavaScript.
+   
 
 Test it live and source code ⭐
 """""""""""""""""""""""""""""""
