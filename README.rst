@@ -102,14 +102,10 @@ These are the functionalities that I have added to the base project so far:
 
 With frameworks (TODO)
 ======================
-Amazon Lex
-----------
-Google Dialogflow
-------------------
-IBM Watson Assistant
---------------------
-Microsoft Azure Bot Service
----------------------------
+.. Google Dialogflow asks for credit card
+.. IBM Watson Assistant asks for phone number
+.. Microsoft Azure Bot Service asks for phone number
+.. Amazon Lex asks for phone number
 
 Books
 =====
