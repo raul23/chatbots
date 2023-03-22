@@ -16,9 +16,9 @@ Chabot assistant + ELIZA (JavaScript)
 
    <div align="center">
     <a href="https://codepen.io/raul23/full/RwYYJYd" target="_blank">
-      <img src="./images/javascript_chatbot.png">
+      <img src="./images/javascript_chatbot2.png">
     </a>
-    <p align="center">The chatbot having a short "conversation"</p>
+    <p align="center">The chatbot is in session with a patient</p>
   </div>
   
 `:information_source:` 
