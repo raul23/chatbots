@@ -10,8 +10,8 @@ Exploring and implementing chatbots
 
 Without frameworks
 ==================
-JavaScript implementation (+ELIZA)
-----------------------------------
+JavaScript (+ELIZA)
+-------------------
 .. raw:: html
 
    <div align="center">
