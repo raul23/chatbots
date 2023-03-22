@@ -10,8 +10,8 @@ Exploring and implementing chatbots
 
 Without frameworks
 ==================
-JavaScript (+ELIZA)
--------------------
+Chabot assistant + ELIZA (JavaScript)
+-------------------------------------
 .. raw:: html
 
    <div align="center">
