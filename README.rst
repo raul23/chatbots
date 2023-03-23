@@ -125,9 +125,9 @@ These are the functionalities that I have added to the base project so far:
   
     eliza.py
    
-    - a cheezy little Eliza knock-off by Joe Strout <joe@strout.net>
-    - with some updates by Jeff Epler <jepler@inetnebr.com>
-    - hacked into a module and updated by Jez Higgins <jez@jezuk.co.uk>
+    - a cheezy little Eliza knock-off by Joe Strout
+    - with some updates by Jeff Epler
+    - hacked into a module and updated by Jez Higgins
     - last revised: 28 February 2005
   
   .. raw:: html
