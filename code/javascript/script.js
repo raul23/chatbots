@@ -259,6 +259,9 @@ class Eliza {
   //    chosen response from the corresponding list.
   //----------------------------------------------------------------------
   respond(str) {
+    // TODO: if user asks first "I am fine and you?", chatbot's answer is weirdly constructed:
+    // e.g. "How do you feel about being fine and you?"
+    // without '?' in user's question -> "How do you feel about being fine and me?" [chatbot's answer]
     for (let i = 0; i < this.keys.length; i++) {
       let regex = this.keys[i];
       let match = regex.exec(str);
@@ -273,12 +276,15 @@ class Eliza {
           resp = resp.slice(0, pos) + this.translate(match[num], gReflections) + resp.slice(pos+2);
           pos = resp.indexOf('%');
         }
-        // fix munged punctuation at the end
-        if (JSON.stringify(resp.slice(-2)) == '?.') { 
-          resp = resp.slice(0, -2) + '.';
-        }
-        if (JSON.stringify(resp.slice(-2)) == '??') {
-          resp = resp.slice(0, -2) + '?';
+        // e.g. "I am fine??" -> "I am fine???" [if not using the `while` like the old code]
+        while (JSON.stringify(resp.slice(-2)) == '"?."' || JSON.stringify(resp.slice(-2)) == '"??"') {
+          // fix munged punctuation at the end
+          if (JSON.stringify(resp.slice(-2)) == '"?."') { 
+            resp = resp.slice(0, -2) + '.';
+          }
+          if (JSON.stringify(resp.slice(-2)) == '"??"') {
+            resp = resp.slice(0, -2) + '?';
+          } 
         }
         return resp;
       }
@@ -293,117 +299,117 @@ var therapist = new Eliza();
 var coll = document.getElementsByClassName("collapsible");
 
 for (let i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
+  coll[i].addEventListener("click", function () {
+    this.classList.toggle("active");
 
-        var content = this.nextElementSibling;
+    var content = this.nextElementSibling;
 
-        if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
 
-    });
+  });
 }
 
 function getTime() {
-    let today = new Date();
-    hours = today.getHours();
-    minutes = today.getMinutes();
+  let today = new Date();
+  hours = today.getHours();
+  minutes = today.getMinutes();
 
-    if (hours < 10) {
-        hours = "0" + hours;
-    }
+  if (hours < 10) {
+    hours = "0" + hours;
+  }
 
-    if (minutes < 10) {
-        minutes = "0" + minutes;
-    }
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
 
-    let time = hours + ":" + minutes;
-    return time;
+  let time = hours + ":" + minutes;
+  return time;
 }
 
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "How's it going?"
-    document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
+  let firstMessage = "How's it going?"
+  document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
-    let time = getTime();
+  let time = getTime();
 
-    $("#chat-timestamp").append(time);
-    document.getElementById("userInput").scrollIntoView(false);
+  $("#chat-timestamp").append(time);
+  document.getElementById("userInput").scrollIntoView(false);
 }
 
 firstBotMessage();
 
 // Retrieves the response
 function getHardResponse(userText) {
-    let botResponse = getBotResponse(userText);
-    //let botResponse = "I love you too!";
-    //let botResponse = "I hate you though!";
-    let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
-    $("#chatbox").append(botHtml);
+  let botResponse = getBotResponse(userText);
+  //let botResponse = "I love you too!";
+  //let botResponse = "I hate you though!";
+  let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
+  $("#chatbox").append(botHtml);
 
-    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+  document.getElementById("chat-bar-bottom").scrollIntoView(true);
 }
 
 function getHardResponse2(userText) {
-    //let botResponse = getBotResponse(userText);
-    let botResponse = "I love you too!";
-    let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
-    $("#chatbox").append(botHtml);
+  //let botResponse = getBotResponse(userText);
+  let botResponse = "I love you too!";
+  let botHtml = '<p class="botText"><span>' + botResponse + '</span></p>';
+  $("#chatbox").append(botHtml);
 
-    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+  document.getElementById("chat-bar-bottom").scrollIntoView(true);
 }
 
 //Gets the text text from the input box and processes it
 function getResponse() {
-    let userText = $("#textInput").val();
+  let userText = $("#textInput").val();
 
-    if (userText == "") {
-        userText = "I love Code Palace!";
-    }
+  if (userText == "") {
+    userText = "I love programming!";
+  }
 
-    let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
+  let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
 
-    $("#textInput").val("");
-    $("#chatbox").append(userHtml);
-    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+  $("#textInput").val("");
+  $("#chatbox").append(userHtml);
+  document.getElementById("chat-bar-bottom").scrollIntoView(true);
 
-    setTimeout(() => {
-        getHardResponse(userText);
-    }, 1000)
+  setTimeout(() => {
+    getHardResponse(userText);
+  }, 1000)
 
 }
 
 // Handles sending text via button clicks
 function buttonSendText(sampleText) {
-    let userHtml = '<p class="userText"><span>' + sampleText + '</span></p>';
+  let userHtml = '<p class="userText"><span>' + sampleText + '</span></p>';
 
-    $("#textInput").val("");
-    $("#chatbox").append(userHtml);
-    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+  $("#textInput").val("");
+  $("#chatbox").append(userHtml);
+  document.getElementById("chat-bar-bottom").scrollIntoView(true);
 
-    //Uncomment this if you want the bot to respond to this buttonSendText event
-    setTimeout(() => {
-        getHardResponse2(sampleText);
-    }, 1000)
+  //Uncomment this if you want the bot to respond to this buttonSendText event
+  setTimeout(() => {
+    getHardResponse2(sampleText);
+  }, 1000)
 }
 
 function sendButton() {
-    getResponse();
+  getResponse();
 }
 
 function heartButton() {
-    buttonSendText("Heart clicked!")
+  buttonSendText("Heart clicked!")
 }
 
 // Press enter to send a message
 $("#textInput").keypress(function (e) {
-    if (e.which == 13) {
-        getResponse();
-    }
+  if (e.which == 13) {
+    getResponse();
+  }
 });
 
 function getBotResponse(input) {
@@ -484,11 +490,11 @@ function getRandomInt(min, max) {
 
 // https://www.programiz.com/javascript/examples/get-random-item
 function getRandomItem(arr) {
-    // get random index value
-    const randomIndex = Math.floor(Math.random() * arr.length);
-    // get random item
-    const item = arr[randomIndex];
-    return item;
+  // get random index value
+  const randomIndex = Math.floor(Math.random() * arr.length);
+  // get random item
+  const item = arr[randomIndex];
+  return item;
 }
 
 function getTimeFromCity(input) {
